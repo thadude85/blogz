@@ -3,7 +3,8 @@
 {% block content %}
     
     
-    <h1>{{viewpost.title}}</h1>
-    <p>{{viewpost.body}}</p>
-    
+    <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+    <p>written by <a href='./blog?user={{post.owner_id}}'>{{post.owner_id}}</a></p>
 {% endblock %}
+<p>written by <a href='./blog?user={{post.id}}'>{{post.username}}</a></p>

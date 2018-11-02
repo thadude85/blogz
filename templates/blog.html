@@ -7,7 +7,9 @@
         {% for newpost in blogpost %}
         <h1><a href='./blog?id={{newpost.id}}'>{{newpost.title}}</a></h1>
         <p>{{newpost.body}}</p>
+        <p>written by <a href='./blog?user={{newpost.owner_id}}'>{{newpost.owner_id}}</a></p>
         {% endfor %}
     
 
 {% endblock %}
+ 
